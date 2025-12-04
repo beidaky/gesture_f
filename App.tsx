@@ -25,7 +25,7 @@ export default function App() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const lastVideoTimeRef = useRef(-1);
   const handLandmarkerRef = useRef<HandLandmarker | null>(null);
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number>(0);
 
   // Initialize MediaPipe
   useEffect(() => {
